@@ -27,11 +27,12 @@ if(isset($_FILES['nwp_file'])){
     }
     fclose($info);
     $info_arr = json_decode($info_json, true);
+    $date_arr = explode("-", $date);
     $info_arr[$id] =[
-        "day" => "1",
-        "month_i" => "2",
-        "month_s" => "$date",
-        "year" => "2018",
+        "day" => "$date_arr[2]",
+        "month_i" => "$date_arr[1]",
+        "month_s" => "февраля",
+        "year" => "$date_arr[0]",
         "page" => "8",
         "time" => "10:13:40"
     ];
@@ -47,7 +48,7 @@ if(isset($_FILES['nwp_file'])){
 </head>
 <body>
     <a href="new.php">Ссылка назад</a>
-    <form enctype="multipart/form-data" action="?id=<? echo $id?>&date=<? echo $date?>" method="post">
+    <form enctype="multipart/form-data" action="?id=<?php echo $id; ?>&date=<?php echo $date; ?>" method="post">
         <input type="file" name="nwp_file[]" multiple accept="image/jpeg">
         <input type="submit" value="Отправить">
     </form>

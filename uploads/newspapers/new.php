@@ -4,7 +4,7 @@
         function FileSend(elm) {
             var nwp_num = elm.nwp_num.value;
             var nwp_date = elm.nwp_date.value;
-            nwp_date = nwp_date.split('-')[0];
+            //nwp_date = nwp_date.split('-')[0];
             if(nwp_num == "" || nwp_num == " "){
                 alert("Не введён номер выпуска!");
             }

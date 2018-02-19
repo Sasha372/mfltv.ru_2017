@@ -38,7 +38,7 @@
     fclose($nwp_file);
     $nwp_info = json_decode($json_data, true);
 
-    $allNewsp = 8;
+    $allNewsp = 9;
     if($count < $allNewsp){
         $lim = $allNewsp - $count;
     }elseif ($count > $allNewsp){
