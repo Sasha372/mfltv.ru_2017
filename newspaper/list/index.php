@@ -2,6 +2,7 @@
 <link href="style.css" rel="stylesheet">
 <title>Журналы</title>
 <?php
+    $basepath = $_SERVER['DOCUMENT_ROOT'];
     if($_GET['count']){$count = $_GET['count'];}else{$count = 10;}
 
     /*require (__FILE__."/Smarty/Smarty.class.php");
@@ -14,7 +15,7 @@
 
     //$smarty->display("header.tpl");*/
 
-    include ("/var/www/mfltv/templates/Syntetica/header/index.php");
+    include ($basepath."/templates/Syntetica/header/index.php");
 
     /*class newspap_data {
         function __construct($day, $month_i, $month_s, $year){

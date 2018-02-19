@@ -6,6 +6,7 @@ if(isset($_FILES['nwp_file'])){
     //echo "D: ".$date;
     mkdir($basepath.$id, 0777);
     chmod($basepath.$id, 0777);
+    $count_jpg = 0;
     foreach ($_FILES["nwp_file"]["error"] as $key => $error) {
         if ($error == UPLOAD_ERR_OK) {
             $f_name = $_FILES['nwp_file']['name'][$key];
@@ -19,6 +20,7 @@ if(isset($_FILES['nwp_file'])){
                 echo "Error!";
             }
         }
+        $count_jpg++;
     }
     if($suc)echo $id."й выпуск газеты успешно загружен!<br>";
     $info = fopen($basepath."info.json", "rw+tn");
@@ -33,8 +35,8 @@ if(isset($_FILES['nwp_file'])){
         "month_i" => "$date_arr[1]",
         "month_s" => "февраля",
         "year" => "$date_arr[0]",
-        "page" => "8",
-        "time" => "10:13:40"
+        "page" => "$count_jpg",
+        "time" => date("H").":".date("i").":".date("s")
     ];
     $info_out = json_encode($info_arr, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_LINE_TERMINATORS );
     echo "\n\r";
@@ -42,13 +44,14 @@ if(isset($_FILES['nwp_file'])){
     fwrite($out, $info_out);
     fclose($out);
 }
+$path_script = "?id=".$id."&date=".$date;
 ?>
 <head>
     <title>Загрузить новый выпуск газеты</title>
 </head>
 <body>
     <a href="new.php">Ссылка назад</a>
-    <form enctype="multipart/form-data" action="?id=<?php echo $id; ?>&date=<?php echo $date; ?>" method="post">
+    <form enctype="multipart/form-data" action="<?php echo $path_script?>" method="post">
         <input type="file" name="nwp_file[]" multiple accept="image/jpeg">
         <input type="submit" value="Отправить">
     </form>

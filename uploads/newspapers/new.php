@@ -15,13 +15,15 @@
     </script>
 </head>
 <body>
-    <form enctype="multipart/form-data" method="post" id="frm">
-        <label for="nwp_num">Номер загружаемого выпуска газеты: </label>
-        <input type="text" placeholder="Номер газеты" name="nwp_num" id="nwp_num"><br><br>
+    <div class="form_upload">
+         <form enctype="multipart/form-data" method="post" id="frm">
+            <!--<label for="nwp_num">Номер загружаемого выпуска газеты: </label>-->
+            <input type="text" placeholder="Номер газеты" name="nwp_num" id="nwp_num"><br><br>
 
-        <label for="nwp_date">Дата загрузки выпуска: </label>
-        <input type="date" placeholder="Дата загрузки" name="nwp_date" id="nwp_date"><br><br>
+            <!--<label for="nwp_date">Дата загрузки выпуска: </label>-->
+            <input type="date" placeholder="Дата загрузки" name="nwp_date" id="nwp_date"><br><br>
 
-        <input type="button" onclick="FileSend(document.getElementById('frm'))" value="Отправить">
-    </form>
+            <input type="button" onclick="FileSend(document.getElementById('frm'))" value="Отправить">
+         </form>
+    </div>
 </body>
