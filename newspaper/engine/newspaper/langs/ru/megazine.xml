@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lang id="en">
+	<langstring name="LNG_LANGUAGE_NAME">Русский</langstring>
+	<langstring name="LNG_LOADING">Загрузка... $1%</langstring>
+	<langstring name="LNG_BOOKEDGE_PAGENUMBER">Перейти на страницу $1</langstring>
+</lang>

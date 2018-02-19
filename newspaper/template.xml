@@ -1,0 +1,15 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<!DOCTYPE book SYSTEM "http://www.megazine3.de/megazine2.dtd">
+<book
+pageheight
+pagewidth
+bgcolor
+lang="ru, en"
+pagethickness
+maxloaded
+minscale
+maxscale
+plugins
+>
+
+</book>

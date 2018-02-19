@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<lang id="en">
+	<langstring name="LNG_FIRST_PAGE">Первая страница</langstring>
+	<langstring name="LNG_LAST_PAGE">Последняя страница</langstring>
+	<langstring name="LNG_PREV_PAGE">Предыдущая страница</langstring>
+	<langstring name="LNG_NEXT_PAGE">Следущая  страница</langstring>
+	<langstring name="LNG_GOTO_PAGE">Перейти на страницу $1</langstring>
+	<langstring name="LNG_GOTO_DIALOG_TIP">Пожалуйста введите номер страницы для перехода на неё, затем нажмите Enter.</langstring>
+	<langstring name="LNG_FULLSCREEN">Включить полно-экранный режим (Горячие клавиши могут не работать в полноэкранном режиме)</langstring>
+	<langstring name="LNG_RESTORE">Отключить полно-экранный режим</langstring>
+	<langstring name="LNG_MUTE">Отключить звук</langstring>
+	<langstring name="LNG_UNMUTE">Включить звук</langstring>
+	<langstring name="LNG_ZOOM_IN">Приблизить</langstring>
+	<langstring name="LNG_ZOOM_OUT">Отдалить</langstring>
+	<langstring name="LNG_ROTATE_RIGHT">Повернуть книгу по часовой стрелке</langstring>
+	<langstring name="LNG_ROTATE_LEFT">Повернуть книгу против часовой стрелке</langstring>
+</lang>

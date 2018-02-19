@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+.line-menu{
+    background-color: #727272;/*#00b3ee;*/
+    left: 0;right: 0;
+    height: 60px;
+    -webkit-padding-start: 0;
+}
+
+.menu{
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+/* Раздел меню */
+.menu a{
+    padding: 21px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+#nav a{
+    float: left;
+}
+
+.accaunt{
+    float: right;
+}
+
+.menu a:hover{
+    color: #292929;
+}
+
+.menu .active{
+    color: black;
+}
+
+.block-container{
+    margin: 5px 4px 5px 1px;
+}
+.block-name{
+    text-align: center;
+    background-color: lightgray;
+}
+.block-content{
+    background-color: lightblue;
+    /*border: 3px darkgrey solid;*/
+}
+
+.col{
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+#left-col{
+    display: table;
+    width: 20%;
+    float: left;
+}
+
+#right-col{
+    display: table;
+    width: 79%;
+    float: right;
+}
+
+td,th{
+    border: 1px black solid;
+
+}
+
+#frame{
+    height: 700px;
+    width: 1000px;
+}
+
+.zindex0{
+    position: relative;
+    float: left;
+}
+
+.zindex0 .text{
+    position: absolute;
+}
+
+#WhiteCat{
+    top: 10px;
+    left: 20px;
+}
+
+#p2{
+    top: 10px;
+    left: 20px;
+}
+
+#Button{
+    right: 10px;
+    bottom: 10px;
+}
+
+.Button{
+    background-image: url("/img/button.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 186px;
+    height: 52px;
+    background-position: 0 0;
+}
+
+.Button:hover{
+    background-position: 0 -52px;
+}
+
+.Button:active{
+    background-position: 0 -104px;
+}
+
+
+
+
+
+
+
+
+
+
+

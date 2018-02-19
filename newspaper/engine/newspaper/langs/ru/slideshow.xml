@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lang id="en">
+	<langstring name="LNG_SLIDESHOW_START">Начать слайдшоу</langstring>
+	<langstring name="LNG_SLIDESHOW_STOP">Остановить слайдшоу</langstring>
+</lang>

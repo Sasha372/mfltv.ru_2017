@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.clearfix:after,.clearfix:before{
+    content: '';
+    display: table;
+}
+.clearfix:after{
+    clear: both;
+}
+
+.block-news{
+    width: 100%;
+    max-width: 1350px;
+    margin: auto;
+}
+
+.block-news:after, .block-news:before{
+    height: 20px;
+}
+
+.block-newspaper{
+    display: table;
+    width: 30%;
+    float: left;
+}
+
+.block-newsvideo{
+    width: 63%;
+    float: right;
+}
+/*
+@media screen and (max-width: 1366px){
+    .ifrm_new-video{
+        height: 450px;
+        width: 800px;
+    }
+}*/
+
+.view-more-meg{
+    margin-top: 0;
+}
