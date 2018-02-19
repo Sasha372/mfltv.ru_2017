@@ -16,3 +16,9 @@ IF %ttt% LSS 10 (
   
 SET minute=%tt:~3,2%
 SET sec=%tt:~6,2%
+
+git add .
+
+git commit -m "%year%-%month%-%day%_%hour%-%minute%-%sec%"
+pause
+
